@@ -22,7 +22,7 @@ export const CarList = ({ Cars, searchCar, issPremium }) => {
     );
     return (
         <>
-            <ul className="flex flex-wrap space-y-4">
+            <ul className="flex flex-wrap flex-auto space-y-4">
                 {rows}
             </ul>
         </>

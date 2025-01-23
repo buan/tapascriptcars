@@ -25,9 +25,11 @@ export const TapascriptCars = () => {
 
     return (
         <>
-            <Header />
-            <Search onSearchCars={setSearchCar} searchCar={searchCar} issPremium={issPremium} onSetIsPremium={setIssPremium} />
-            <CarList searchCar={searchCar} Cars={Cars} issPremium={issPremium} />
+            <div className="container p-5">
+                <Header />
+                <Search onSearchCars={setSearchCar} searchCar={searchCar} issPremium={issPremium} onSetIsPremium={setIssPremium} />
+                <CarList searchCar={searchCar} Cars={Cars} issPremium={issPremium} />
+            </div>
         </>
     )
 }
